@@ -5,6 +5,7 @@
   --background-color: #2f303a;
   --logo-color: #000000;
   --site-nav-color: #ffffff;
+  --background-color-tim: #F5F4FA;
 }
 
 .visually-hidden {
@@ -22,7 +23,6 @@
 
 .page {
   color: var(--primary-text-color);
-  font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
 }
 
@@ -31,23 +31,36 @@
   text-decoration: none;
 }
 
+
 .site-nav .title:hover,
 .site-nav .title:focus {
   color: var(--accent-color);
 }
+
+
 .site-nav .title {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  cursor: pointer;
 }
+
+.site-nav .grey {
+  color: var(--title-text-color);
+}
+
+.site-nav .grey:hover,
+.site-nav .grey:focus {
+  color: var(--accent-color);
+}
+
 
 .logo {
   color: var(--logo-color);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  font-family: "Raleway", sans-serif;
 }
 
 .logo-style {
@@ -73,19 +86,18 @@
   line-height: 1.87;
 }
 
+.section-tim {
+  background-color: var(--background-color-tim);
+}
+
 .section-title {
-  color: var(--primary-text-color);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 .section-style {
   list-style: none;
-}
-
-.feature-list .title {
-  color: var(--primary-text-color);
 }
 
 .feature-list .text {
@@ -96,6 +108,14 @@
 
 .feature-list {
   list-style: none;
+}
+
+.feature-list-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .post-title {
@@ -153,4 +173,5 @@
 
 .site-nav {
   list-style: none;
+  font-style: normal;
 }
