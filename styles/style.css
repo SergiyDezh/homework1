@@ -45,8 +45,16 @@
   letter-spacing: 0.02em;
 }
 
+.title.current {
+  color: var(--accent-color)
+}
+
 .site-nav .grey {
   color: var(--title-text-color);
+  font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .site-nav .grey:hover,
@@ -92,8 +100,10 @@
 
 .section-title {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .section-style {
