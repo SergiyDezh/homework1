@@ -4,125 +4,138 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+        <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
   </head>
   <body class="page">
     <header class="link">
-      <nav>
-        <a href="./index.html" class="logo"
-          ><span class="logo-style">Web</span>Studio</a
-        >
-        <ul class="site-nav">
-          <li><a href="" class="title">Студія</a></li>
-          <li><a href="./portfolio.html" class="title current">Портфоліо</a></li>
-          <li><a href="" class="title">Контакти</a></li>
-        </ul>
-      </nav>
-      <ul class="site-nav">
-        <li>
-          <a href="mailto:info@devdtudio.com" class="grey"
-            >info@devdtudio.com></a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="grey">+38 096 111 11 11></a>
-        </li>
-      </ul>
+      <div class="container lin">
+          <nav class="lin">
+            <a href="./index.html" class="logo logo-hed"><span class="logo-style">Web</span>Studio</a>
+            <ul class="site-nav lin lin-link">
+              <li class="studio"><a href="" class="title">Студія</a></li>
+              <li class="studio"><a href="./portfolio.html" class="title current">Портфоліо</a></li>
+              <li class="studio"><a href="" class="title">Контакти</a></li>
+            </ul>
+          </nav>
+          <ul class="site-nav lin lin-rel">
+            <li class="number">
+              <a href="mailto:info@devdtudio.com" class="grey">info@devdtudio.com></a>
+            </li>
+            <li class="number">
+              <a href="tel:+380961111111" class="grey">+38 096 111 11 11></a>
+            </li>
+          </ul>
+      </div> 
     </header>
     <main>
-      <section>
-        <h1 class="visually-hidden">Portfolio</h1>
-        <ul class="button-list">
-          <li>
-            <button class="button" type="button">Усі</button>
-          </li>
-          <li>
-            <button class="button" type="button">Веб-сайт</button>
-          </li>
-          <li>
-            <button class="button" type="button">Додатки</button>
-          </li>
-          <li>
-            <button class="button" type="button">Дизайн</button>
-          </li>
-          <li>
-            <button class="button" type="button">Маркетинг</button>
-          </li>
-        </ul>
-        <ul class="section">
-          <li>
-            <a class="decoration" href=""><img src="./images.portfolio/img1.jpg" alt="Технокряк" width="370" height="294">
-            <h2 class="section-title">Технокряк</h1>
-              <p class="text">Веб-сайт</p></a>
-          </li>
-          <li>
-           <a class="decoration" href=""><img src="./images.portfolio/img2.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
-          <h2 class="section-title">Постер New Orlean vs Golden Star</h1>
-            <p class="text">Дизайн</p></a>
-          </li>
-          <li>
-            <a class="decoration" href=""><img src="./images.portfolio/img3.jpg" alt="Ресторан Seafood" width="370" height="294">
-            <h2 class="section-title">Ресторан Seafood</h1>
-              <p class="text">Додаток</p></a>
-          </li>
-          <li>
-            <a class="decoration" href=""><img src="./images.portfolio/img4.jpg" alt="Проєкт Prime" width="370" height="294">
-            <h2 class="section-title">Проєкт Prime</h1>
-              <p class="text">Маркетинг</p></a>
-          </li>
-          <li>
-           <a class="decoration" href=""><img src="./images.portfolio/img5.jpg" alt="Проєкт Boxes" width="370" height="294">
-          <h2 class="section-title">Проєкт Boxes</h1>
-            <p class="text">Додаток</p></a>
-          </li>
-          <li>
-           <a class="decoration" href=""><img src="./images.portfolio/img6.jpg" alt="Inspiration has no Borders" width="370" height="294">
-          <h2 class="section-title">Inspiration has no Borders</h1>
-            <p class="text">Веб-сайт</p></a>
-          </li>
-          <li>
-          <a class="decoration" href=""><img src="./images.portfolio/img7.jpg" alt="Видання Limited Edition" width="370" height="294">
-          <h2 class="section-title">Видання Limited Edition</h1>
-            <p class="text">Дизайн</p></a>
-          </li>
-          <li>
-           <a class="decoration" href=""><img src="./images.portfolio/img8.jpg" alt="Проєкт LAB" width="370" height="294">
-          <h2 class="section-title">Проєкт LAB</h1>
-            <p class="text">Маркетинг</p></a>
-          </li>
-          <li>
-          <a class="decoration" href=""><img src="./images.portfolio/img9.jpg" alt="Growing Business" width="370" height="294">
-          <h2 class="section-title">Growing Business</h1>
-            <p class="text">Додаток</p></a>
-          </li>
-        </ul>
+      <section class="container portfolio">
+        <div class="buttons">
+            <h1 class="visually-hidden">Portfolio</h1>
+            <ul class="button-list">
+              <li class="button-item">
+                <button class="button" type="button">Усі</button>
+              </li>
+              <li class="button-item">
+                <button class="button" type="button">Веб-сайт</button>
+              </li>
+              <li class="button-item">
+                <button class="button" type="button">Додатки</button>
+              </li>
+              <li class="button-item">
+                <button class="button" type="button">Дизайн</button>
+              </li>
+              <li class="button-item"> 
+                <button class="button" type="button">Маркетинг</button>
+              </li>
+            </ul>
+        </div>
+       <div class="container">
+            <ul class="section">
+              <li class="retreat">
+                <a class="decoration" href=""><img src="./images.portfolio/img1.jpg" alt="Технокряк" width="370" height="294">
+                  <h2 class="section-title">Технокряк</h1>
+                    <p class="text">Веб-сайт</p>
+                </a>
+              </li>
+              <li class="retreat">
+                <a class="decoration" href=""><img src="./images.portfolio/img2.jpg" alt="Постер New Orlean vs Golden Star"
+                    width="370" height="294">
+                  <h2 class="section-title">Постер New Orlean vs Golden Star</h1>
+                    <p class="text">Дизайн</p>
+                </a>
+              </li>
+              <li class="retreat">
+                <a class="decoration" href=""><img src="./images.portfolio/img3.jpg" alt="Ресторан Seafood" width="370"
+                    height="294">
+                  <h2 class="section-title">Ресторан Seafood</h1>
+                    <p class="text">Додаток</p>
+                </a>
+              </li>
+              <li class="retreat">
+                <a class="decoration" href=""><img src="./images.portfolio/img4.jpg" alt="Проєкт Prime" width="370" height="294">
+                  <h2 class="section-title">Проєкт Prime</h1>
+                    <p class="text">Маркетинг</p>
+                </a>
+              </li>
+              <li class="retreat">
+                <a class="decoration" href=""><img src="./images.portfolio/img5.jpg" alt="Проєкт Boxes" width="370" height="294">
+                  <h2 class="section-title">Проєкт Boxes</h1>
+                    <p class="text">Додаток</p>
+                </a>
+              </li>
+              <li class="retreat">
+                <a class="decoration" href=""><img src="./images.portfolio/img6.jpg" alt="Inspiration has no Borders" width="370"
+                    height="294">
+                  <h2 class="section-title">Inspiration has no Borders</h1>
+                    <p class="text">Веб-сайт</p>
+                </a>
+              </li>
+              <li class="retreat">
+                <a class="decoration" href=""><img src="./images.portfolio/img7.jpg" alt="Видання Limited Edition" width="370"
+                    height="294">
+                  <h2 class="section-title">Видання Limited Edition</h1>
+                    <p class="text">Дизайн</p>
+                </a>
+              </li>
+              <li class="retreat">
+                <a class="decoration" href=""><img src="./images.portfolio/img8.jpg" alt="Проєкт LAB" width="370" height="294">
+                  <h2 class="section-title">Проєкт LAB</h1>
+                    <p class="text">Маркетинг</p>
+                </a>
+              </li>
+              <li class="retreat">
+                <a class="decoration" href=""><img src="./images.portfolio/img9.jpg" alt="Growing Business" width="370"
+                    height="294">
+                  <h2 class="section-title">Growing Business</h1>
+                    <p class="text">Додаток</p>
+                </a>
+              </li>
+            </ul>
+       </div>
       </section>
     </main>
     <footer class="success">
-      <a href="./index.html" class="logo"
-        ><span class="logo-style">Web</span
-        ><span class="logo-item">Studio</span></a
-      >
-      <address>
-        <ul class="site-nav">
-          <li><a href="" class="item">м. Київ, пр-т Лесі Українки, 26</a></li>
-          <li>
-            <a href="mailto:info@devdtudio.com" class="style"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="style">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <a href="./index.html" class="logo"><span class="logo-style">Web</span><span class="logo-item">Studio</span></a>
+        <address class="foot-top">
+          <ul class="site-nav">
+            <li class="foot-botton"><a href="" class="item">м. Київ, пр-т Лесі Українки, 26</a></li>
+            <li class="foot-botton">
+              <a href="mailto:info@devdtudio.com" class="style">info@devstudio.com</a>
+            </li>
+            <li>
+              <a href="tel:+380961111111" class="style">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

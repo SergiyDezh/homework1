@@ -5,7 +5,7 @@
   --background-color: #2f303a;
   --logo-color: #000000;
   --site-nav-color: #ffffff;
-  --background-color-tim: #F5F4FA;
+  --background-color-tim: #f5f4fa;
 }
 
 .visually-hidden {
@@ -21,6 +21,23 @@
   margin: -1px;
 }
 
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .page {
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
@@ -31,12 +48,44 @@
   text-decoration: none;
 }
 
+.lin {
+  display: flex;
+  align-items: baseline;
+}
+
+.link {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.lin-link {
+  margin-right: 344px;
+}
+
+.studio {
+  margin-right: 50px;
+}
+
+.studio:nth-child(3) {
+  margin-right: 0;
+}
+
+.number {
+  margin-right: 50px;
+}
+
+.number:nth-child(2) {
+  margin-right: 0;
+}
+
+.site-nav {
+  padding: 0;
+}
 
 .site-nav .title:hover,
 .site-nav .title:focus {
   color: var(--accent-color);
 }
-
 
 .site-nav .title {
   font-weight: 500;
@@ -46,22 +95,21 @@
 }
 
 .title.current {
-  color: var(--accent-color)
+  color: var(--accent-color);
 }
 
 .site-nav .grey {
   color: var(--title-text-color);
   font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .grey:hover,
 .site-nav .grey:focus {
   color: var(--accent-color);
 }
-
 
 .logo {
   color: var(--logo-color);
@@ -71,12 +119,19 @@
   font-family: "Raleway", sans-serif;
 }
 
+.logo-hed {
+  width: 145px;
+  height: 31px;
+  margin-right: 93px;
+}
+
 .logo-style {
   color: var(--accent-color);
 }
 
 .hero {
   background-color: var(--background-color);
+  text-align: center;
 }
 .hero-title {
   color: var(--site-nav-color);
@@ -84,6 +139,9 @@
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding-top: 200px;
 }
 .button {
   color: var(--site-nav-color);
@@ -92,6 +150,14 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  margin-bottom: 200px;
+  margin-top: 30px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border-style: none;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .section-tim {
@@ -100,14 +166,49 @@
 
 .section-title {
   font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .section-style {
+  display: flex;
   list-style: none;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 270;
+  height: auto;
+}
+
+.images {
+  margin-right: 30px;
+}
+
+.images:nth-child(3) {
+  margin-right: 0;
+}
+
+.card {
+  margin-bottom: 94px;
+}
+
+.comand {
+  padding: 94px;
+}
+
+.comander {
+  width: 270px;
+  margin-right: 30px;
+  background-color: var(--site-nav-color);
+}
+
+.comander:nth-child(4) {
+  margin-right: 0;
 }
 
 .feature-list .text {
@@ -116,8 +217,25 @@
   line-height: 1.71;
 }
 
+.context {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .feature-list {
+  display: flex;
+  flex-wrap: nowrap;
   list-style: none;
+  padding: 0;
+}
+
+.features {
+  width: 270px;
+  margin-right: 30px;
+}
+
+.features:nth-child(4) {
+  margin-right: 0;
 }
 
 .feature-list-title {
@@ -126,6 +244,7 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .post-title {
@@ -133,20 +252,37 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .post {
+  display: flex;
   list-style: none;
+  padding: 0;
 }
 
 .text-title {
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 19px;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
 .success {
   background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.foot-top {
+  margin-top: 20px;
+}
+
+.foot-botton {
+  margin-bottom: 9px;
 }
 
 .success a {
@@ -155,6 +291,11 @@
 
 .logo-item {
   color: var(--site-nav-color);
+}
+
+.foot {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .site-nav .item {
