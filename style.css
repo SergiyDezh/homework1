@@ -7,6 +7,7 @@
   --logo-color: #000000;
   --site-nav-color: #ffffff;
   --background-button-color: #f5f4fa;
+  --icon-color: #AFB1B8;
 }
 
 .visually-hidden {
@@ -278,4 +279,65 @@ ul {
 
 .decoration {
   text-decoration: none;
+}
+
+.social {
+  display: block;
+  width: 206px;
+  height: 80px;
+}
+
+.social .social-icons {
+  padding-left: 0;
+}
+
+.socials {
+  color: var(--site-nav-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+
+.post .social-icons {
+  display: flex;
+  margin-top: 16px;
+}
+
+.post .social-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  list-style: none;
+}
+
+
+.post .social-link {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border-bottom: none;
+}
+
+.post .social-link:hover {
+  background-color: var(--accent-color);
+}
+
+.post .social-icon {
+  fill: var(--icon-color);
+}
+
+.post .social-link:hover .social-icon {
+  fill: var(--site-nav-color);
+}
+
+
+.post .social-item:nth-child(4) {
+  margin-right: 0;
 }
