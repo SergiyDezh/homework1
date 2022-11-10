@@ -313,21 +313,6 @@ ul {
   align-items: baseline;
 }
 
-.back {
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.social {
-  display: block;
-  width: 206px;
-  height: 80px;
-  margin-left: 70px;
-}
-
-.fill-icon {
-  fill: var(--site-nav-color);
-}
 
 .social .social-icons {
   padding-left: 0;
@@ -382,4 +367,20 @@ ul {
 
 .post .social-item:nth-child(4) {
   margin-right: 0;
+}
+
+.back {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social {
+  display: block;
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+}
+
+.back .fill-icon {
+  fill: var(--site-nav-color);
 }
