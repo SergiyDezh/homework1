@@ -502,6 +502,7 @@ img {
 .conter {
   display: flex;
   align-items: center;
+  align-items: baseline;
 }
 
 .back {
@@ -516,7 +517,7 @@ img {
   margin-left: 70px;
 }
 
-.fill-icon {
+.back .fill-icon {
   fill: var(--site-nav-color);
 }
 
