@@ -95,6 +95,7 @@ ul {
 .envelope {
   display: flex;
   align-items: center;
+  transition: color 250ms linear;
 }
 
 .number:nth-child(2) {
@@ -118,7 +119,9 @@ ul {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
+  transition: color 250ms linear;
 }
+
 
 .title.current {
   color: var(--accent-color);
@@ -244,11 +247,32 @@ img {
 }
 
 .images {
+  position: relative;
   margin-right: 30px;
 }
 
 .images:nth-child(3) {
   margin-right: 0;
+}
+
+.label {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  z-index: 1;
+}
+
+.text-label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  padding-top: 27px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--site-nav-color);
 }
 
 .comander {
@@ -334,11 +358,16 @@ img {
   margin-top: 16px;
 }
 
+
 .post .social-item {
   width: 44px;
   height: 44px;
   margin-right: 10px;
   list-style: none;
+}
+
+.transit {
+  transition: color 250ms linear;
 }
 
 .post .social-link {
@@ -402,7 +431,6 @@ img {
   padding-left: 0;
 }
 
-
 .rectangle {
   list-style: none;
   width: 170px;
@@ -410,23 +438,6 @@ img {
   margin-right: 30px;
 }
 
-.rectangle {
-  fill: var(--icon-color);
-  border: 1px solid var(--icon-color);
-  border-radius: 4px;
-}
-
-.icon-class {
-  fill: var(--icon-color);
-}
-
-.icon-class:hover .rectangle {
-  fill: var(--accent-color);
-}
-
-.rectangle:hover .icon-class {
-  fill: var(--accent-color);
-}
 
 .rectangle:hover .icon-class {
   fill: var(--accent-color);
@@ -446,8 +457,15 @@ img {
   width: 170px;
   height: 92px;
   margin-right: 30px;
+  fill: var(--icon-color);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
 }
 
+.icon-class:hover {
+  fill: var(--accent-color);
+  border: var(--accent-color);
+}
 
 .foot-top {
   margin-top: 20px;
