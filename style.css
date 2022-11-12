@@ -69,8 +69,25 @@ ul {
 
 .studio {
   margin-right: 50px;
-  
 }
+
+.studio::after {
+  content: '';
+  opacity: 0;
+  display: block;
+  bottom: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  background-size: auto;
+  border-radius: 2px;
+} 
+
+.studio:hover::after,
+.studio:focus::after {
+  opacity: 1;
+} 
 
 .studio:nth-child(3) {
   margin-right: 0;
@@ -237,24 +254,33 @@ ul {
 }
 
 .card {
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  background: var(--background-card);
-  top: 0;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.03em;
-  color: var(--site-nav-color);
-  padding: 63px 24px;
-  transform: translateY(100%);
-  transition: transform 250ms linear;
+  position: relative;
+  overflow: hidden;
 }
 
-.decoration:hover .card {
-  transform: translateY(0);
+.text-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 63px;
+  padding-right: 24px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--site-nav-color);
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.decoration:hover .text-card {
+  transform: translateY(0%);
+  opacity: 1;
 }
 
 .text {
@@ -320,11 +346,13 @@ ul {
 .site-nav .item:hover,
 .site-nav .item:focus {
   color: var(--accent-color);
+  transition: color 250ms linear;
 }
 
 .site-nav .style:hover,
 .site-nav .style:focus {
   color: var(--accent-color);
+  transition: color 250ms linear;
 }
 
 .site-nav {
