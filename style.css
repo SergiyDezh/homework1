@@ -84,10 +84,6 @@ ul {
   border-radius: 2px;
 } 
 
-.studio:hover::after,
-.studio:focus::after {
-  opacity: 1;
-} 
 
 .studio:nth-child(3) {
   margin-right: 0;
