@@ -586,7 +586,6 @@ img {
 
 .modal {
   width: 528px;
-  height: 581px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -596,6 +595,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding: 40px;
 }
 
 .modal .close-sing {
@@ -629,17 +629,18 @@ img {
   color: var(--logo-color);
 }
 
-.subscription {
-  display: block;
-  width: 570px;
-  height: 86px;
-  margin-left: 93px;
+.close:hover {
+  fill: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.subscription {
+  margin-left: auto;
+}
+
 
 .forms {
   display: flex;
-  flex-direction: column;
-  position: relative;
 }
 
 .sing {
@@ -658,11 +659,11 @@ img {
   width: 358px;
   height: 50px;
   padding-left: 12px;
-  box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--background-color);
+  color: var(--site-nav-color);
 }
 
 .button-mail {
@@ -685,20 +686,11 @@ img {
 }
 
 .icon-send {
-  position: absolute;
-  right: 18px;
-  top: 50%;
-  -webkit-transform: translatey(-50%);
-  transform: translatey(-50%);
+margin-left: 10px;
 }
 
 .description {
-  margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 12px;
-  width: 448px;
-  height: 23px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -708,13 +700,10 @@ img {
 }
 
 .name, .phone, .form-email, .comment {
-  width: 448px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .form-label {
@@ -737,6 +726,7 @@ img {
   padding: 11px 30px;
 }
 
+
 .emailitemform, .nameitemform, .phoneitemform {
   position: absolute;
   fill: var(--primary-text-color);
@@ -754,9 +744,24 @@ img {
 }
 
 .comment {
-  width: 448px;
+  width: 100%;
   margin-bottom: 20px;
 }
+
+.form-input:hover,
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+
+.form-input-agree:hover,
+.form-input-agree:focus {
+  border-color: var(--accent-color);
+}
+
+.form-input:hover + .nameitemform,
+.form-input:focus + .nameitemform {
+  fill: var(--accent-color);
+  }
 
 .form-input-agree {
   padding: 12px 16px;
@@ -781,21 +786,40 @@ form > .agreetext {
 }
 
 .checkitem {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 15px;
-  fill: var(--site-nav-color);
-  border: 1px solid var(--primary-text-color);
-  margin-right: 8.38px;
+  margin-right: 9px;
+  border: 2px solid var(--primary-text-color);
   border-radius: 4px;
+  background-color: var(--accent-color);
 }
+
+.icon-modal-form {
+  fill: transparent;
+  fill: var(--site-nav-color);
+  }
 
 .agreetext .agreelink {
   color: var(--accent-color);
   text-decoration: underline;
 }
 
+
+.agreetext input:checked + .agree-label .checkitem {
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.agreetext input:checked + .agree-label .icon-modal-form {
+  fill: var(--site-nav-color);
+}
+
+
 form > .agree {
+  display: block;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.88em;
@@ -803,9 +827,12 @@ form > .agree {
   cursor: pointer;
   border-radius: 4px;
   border: none;
-  margin-left: 164px;
+  margin: 0 auto;
   color: var(--site-nav-color);
   background-color: var(--accent-color);
   padding: 10px 52px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agree:hover {
+  background-color: #2182d1;
 }
