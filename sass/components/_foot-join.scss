@@ -1,0 +1,28 @@
+.social {
+    display: block;
+    width: 206px;
+    height: 80px;
+    margin-left: 70px;
+  }
+
+  .socials {
+    color: $site-nav-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .social .social-icons {
+    padding-left: 0;
+  }
+
+  .back {
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .back .fill-icon {
+    fill: $site-nav-color;
+  }

@@ -1,0 +1,50 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .feature-list .text {
+    color: $title-text-color;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  
+  .feature-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+
+  .features {
+    width: 270px;
+    margin-right: 30px;
+  }
+  
+  .features:nth-child(4) {
+    margin-right: 0;
+  }
+  
+  .feature-list-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: $background-color-tim;
+    border-radius: 4px;
+  }
+  
+  .section-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

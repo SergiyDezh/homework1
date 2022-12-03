@@ -1,0 +1,85 @@
+.section-tim {
+  background-color: $background-color-tim;
+}
+
+.post {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.post-title {
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.comander {
+  width: 270px;
+  margin-right: 30px;
+  background-color: $site-nav-color;
+}
+
+.comand {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.comander:nth-child(4) {
+  margin-right: 0;
+}
+
+.text-title {
+    color: $title-text-color;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 16px;
+  }
+  
+  .social-item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    list-style: none;
+  }
+  
+  .social-link {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $icon-color;
+    border-radius: 50%;
+    border-bottom: none;
+    fill: currentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .social-link:hover {
+    background-color: $accent-color;
+  }
+  
+  .social-icon {
+    color: $icon-color;
+  }
+  
+  .social-link:hover .social-icon {
+    color: $site-nav-color;
+  }
+  
+  .social-item:nth-child(4) {
+    margin-right: 0;
+  }
