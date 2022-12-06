@@ -9,8 +9,8 @@ ul {
 }
 
 .page {
-  color: var(--primary-text-color);
-  background-color: var(--site-nav-color);
+  color: $primary-text-color;
+  background-color: $site-nav-color;
   font-family: "Roboto", sans-serif;
 }
 
