@@ -3,25 +3,13 @@
     text-decoration: none;
   }
   
-  .lin {
-    display: flex;
-    align-items: center;
-  }
-  
   .link {
     border-bottom: 1px solid #ececec;
   }
   
-  .lin-link {
-    margin-right: 310px;
-  }
-  
-  .studio {
-    margin-right: 50px;
-  }
-  
-  .studio:nth-child(3) {
-    margin-right: 0;
+  .lin {
+    display: flex;
+    align-items: center;
   }
   
   .logo {
@@ -42,9 +30,12 @@
     color: $accent-color;
   }
   
-  .lin-rel {
-    display: flex;
-    align-items: center;
+  .studio {
+    margin-right: 50px;
+  }
+  
+  .studio:nth-child(3) {
+    margin-right: 0;
   }
   
   .number {
@@ -72,10 +63,6 @@
   
   .number:nth-child(2) {
     margin-right: 0;
-  }
-  
-  .site-nav {
-    padding: 0;
   }
   
   .site-nav .title:hover,
@@ -126,4 +113,10 @@
   .site-nav .grey:hover,
   .site-nav .grey:focus {
     color: $accent-color;
+  }
+  
+  .site-nav {
+    list-style: none;
+    padding: 0;
+    margin-left: auto;
   }
