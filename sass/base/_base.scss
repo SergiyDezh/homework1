@@ -5,10 +5,12 @@ p,
 ul {
   margin-top: 0px;
   margin-bottom: 0px;
+  padding: 0;
 }
 
 .page {
   color: $primary-text-color;
+  background-color: $site-nav-color;
   font-family: "Roboto", sans-serif;
 }
 

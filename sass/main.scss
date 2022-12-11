@@ -1,26 +1,27 @@
+
 @import "./base/colors";
 @import "./base/base";
+@import "./layout/hero";
 @import "./utils/visually-hidden";
 @import "./components/link-logo";
-@import "./layout/hero";
 @import "./layout/section-one";
 @import "./layout/section-two";
 @import "./layout/section-tim";
 @import "./layout/section-klient";
 @import "./layout/footer-adress";
 @import "./components/foot-join";
+@import "./base-style/colors";
 @import "./components/foot-button";
 @import "./layout/modal";
 
 
+
 //    PORTFOLIO
 
-@import "./base-style/colors";
-@import "./base-style/base";
-// @import "./utils-style/visually-hidden";
-// @import "./components-style/link-logo";
-@import "./components-style/buttons";
+
 @import "./layout-style/section";
-// @import "./layout-style/foot-adress";
 @import "./layout-style/foot-link";
 @import "./layout-style/foot-button";
+@import "./components-style/buttons";
+
+
