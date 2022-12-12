@@ -25,35 +25,39 @@
   .site-nav {
     list-style: none;
     font-style: normal;
-  }
-
-  .site-nav .item {
+    
+    .item {
     color: $site-nav-color;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .site-nav .style {
+    }
+   
+   .style {
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .site-nav .item:hover,
-  .site-nav .item:focus {
+    }
+}
+
+.site-nav .item {
+    &:hover,
+    &:focus {
     color: $accent-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .site-nav .style:hover,
-  .site-nav .style:focus {
+    }
+}
+
+.site-nav .style {
+    &:hover,
+    &:focus {
     color: $accent-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+    }
+}
 
   .foot-botton {
     margin-bottom: 9px;

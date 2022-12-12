@@ -26,11 +26,11 @@
     .images {
       position: relative;
       margin-right: 30px;
-    }
-    
-    .images:nth-child(3) {
+      
+      &:nth-child(3) {
       margin-right: 0;
-    }
+      }
+}
     
     .label {
       display: flex;
