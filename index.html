@@ -28,21 +28,21 @@
           </ul>
         </nav>
         <ul class="site-nav lin lin-rel">
-          <li class="number">
-            <a class="grey envelope" href="mailto:info@devdtudio.com">
-              <svg class="icon-mail" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devdtudio.com
-            </a>
-          </li>
-          <li class="number">
-            <a class="grey envelope" href="tel:+380961111111">
-              <svg class="icon-mail" width="10" height="16">
-                <use href="./images/symbol-defs.svg#icon-Vector"></use>
-              </svg>
-              +38 096 111 11 11</a>
-          </li>
+            <li class="number">
+              <a class="grey envelope" href="mailto:info@devdtudio.com">
+                <svg class="icon-mail" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devdtudio.com
+              </a>
+            </li>
+            <li class="number">
+              <a class="grey envelope" href="tel:+380961111111">
+                <svg class="icon-mail" width="10" height="16">
+                  <use href="./images/symbol-defs.svg#icon-Vector"></use>
+                </svg>
+                +38 096 111 11 11</a>
+            </li>
         </ul>
       </div>
     </header>
@@ -147,13 +147,22 @@
       </section>
       <section class="section section-tim">
         <div class="container">
-          <h2 class="section-title-two">Наша команда</h2>
+          <h2 class="section-title-tim">Наша команда</h2>
           <ul class="post">
             <li class="comander">
               <img
-                src="./images/img4.jpg"
+                srcset="
+                ./images/comanda/img1_450.jpg 450w,
+                ./images/comanda/img1_900.jpg 900w,
+                ./images/comanda/img1_tab354.jpg 354w,
+                ./images/comanda/img1_tab708.jpg 708w,
+                ./images/comanda/img1_desk270.jpg 270w,
+                ./images/comanda/img1_desk540.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/comanda/img1_450.jpg"
                 alt="Фото Ігора Демʼяненка"
-                width="270"
+                width="450"
                 height="260"
               />
               <div class="comand"> 
@@ -189,9 +198,18 @@
             </li>
             <li class="comander">
               <img
-                src="./images/img5.jpg"
+              srcset="
+              ./images/comanda/img2_450.jpg 450w,
+              ./images/comanda/img2_900.jpg 900w,
+              ./images/comanda/img2_tab354.jpg 354w,
+              ./images/comanda/img2_tab708.jpg 708w,
+              ./images/comanda/img2_desk270.jpg 270w,
+              ./images/comanda/img2_desk540.jpg 540w
+              "
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./images/comanda/img2_450.jpg"
                 alt="Фото Ольги Рєпіної"
-                width="270"
+                width="450"
                 height="260"
               />
               <div class="comand">
@@ -227,13 +245,22 @@
             </li>
             <li class="comander">
               <img
-                src="./images/img6.jpg"
+              srcset="
+              ./images/comanda/img3_450.jpg 450w,
+              ./images/comanda/img3_900.jpg 900w,
+              ./images/comanda/img3_tab354.jpg 354w,
+              ./images/comanda/img3_tab708.jpg 708w,
+              ./images/comanda/img3_desk270.jpg 270w,
+              ./images/comanda/img3_desk540.jpg 540w
+              "
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./images/comanda/img3_450.jpg"
                 alt="Фото Миколи Тарасова"
-                width="270"
+                width="450"
                 height="260"
               />
               <div class="comand">
-                <h3 class="post-title">Ігор Демʼяненко</h3>
+                <h3 class="post-title">Миколa Тарасов</h3>
                 <p class="text-title">Product Desinger</p>
                 <ul class="social-icons list">
                   <li class="social-item">
@@ -265,9 +292,18 @@
             </li>
             <li class="comander">
               <img
-                src="./images/img7.jpg"
+              srcset="
+              ./images/comanda/img4_450.jpg 450w,
+              ./images/comanda/img4_900.jpg 900w,
+              ./images/comanda/img4_tab354.jpg 354w,
+              ./images/comanda/img4_tab708.jpg 708w,
+              ./images/comanda/img4_desk270.jpg 270w,
+              ./images/comanda/img4_desk540.jpg 540w
+              "
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./images/comanda/img4_450.jpg"
                 alt="Фото Михайла Єрмакова"
-                width="270"
+                width="450"
                 height="260"
               />
               <div class="comand">
@@ -356,67 +392,73 @@
     </main>
     <footer class="success">
       <div class="container conter">
-        <div>
-        <a href="./index.html" class="logo"><span class="logo-style">Web</span><span class="logo-item">Studio</span></a>
-        <address class="foot-top">
-          <ul class="site-nav">
-            <li class="foot-botton"><a href="" class="item">м. Київ, пр-т Лесі Українки, 26</a></li>
-            <li class="foot-botton">
-              <a href="mailto:info@devdtudio.com" class="style">info@devstudio.com</a>
-            </li>
-            <li>
-              <a href="tel:+380961111111" class="style">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </address>
-      </div>
-      <div class="post social">
-        <h2 class="socials">
-          Приєднуйтесь
-        </h2>
-        <ul class="social-icons">
-          <li class="social-item back">
-            <a class="social-link link" href="">
-            <svg class="social-icon fill-icon" width="20" height="20">
-              <use href="./images/symbol-defs.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-          <li class="social-item back">
-            <a class="social-link link" href="">
-            <svg class="social-icon fill-icon" width="20" height="20">
-              <use href="./images/symbol-defs.svg#icon-twiter"></use>
-            </svg>
-          </a>
-        </li>
-          <li class="social-item back">
-            <a class="social-link link" href="">
-            <svg class="social-icon fill-icon" width="20" height="20">
-              <use href="./images/symbol-defs.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-          <li class="social-item back">
-            <a class="social-link link" href="">
-            <svg class="social-icon fill-icon" width="20" height="20">
-              <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-        </ul>
-      </div>
-        <div class="subscription">
-          <h2 class="sing">Підпишіться на розсилку</h2>
-          <form class="forms">
-            <input class="mail" type="email" name="mail" id="mail" placeholder="E-mail">
-              <button type="submit" class="button-mail">
-                Підписатися
-                <svg class="icon-send" width="24" height="24">
-                     <use href="./images/telegram.svg#icon-icon-send"></use>
-                </svg>
-             </button>
-          </form>
+        <div class="social-box">
+          <div class="content-box">
+            <div class="logo-foot">
+             <a href="./index.html" class="logo">
+               <span class="logo-style">Web</span>
+               <span class="logo-item">Studio</span></a>
+            </div>
+           <address class="foot-top">
+             <ul class="site-nav-foot">
+               <li class="foot-botton"><a href="" class="item">м. Київ, пр-т Лесі Українки, 26</a></li>
+               <li class="foot-botton">
+                 <a href="mailto:info@devdtudio.com" class="style">info@devstudio.com</a>
+               </li>
+               <li class="foot-botton">
+                 <a href="tel:+380961111111" class="style">+38 096 111 11 11</a>
+               </li>
+             </ul>
+           </address>
+         </div>
+         <div class="post social">
+           <h2 class="socials">
+             Приєднуйтесь
+           </h2>
+           <ul class="social-icons">
+             <li class="social-item back">
+               <a class="social-link link" href="">
+               <svg class="social-icon fill-icon" width="20" height="20">
+                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
+               </svg>
+             </a>
+           </li>
+             <li class="social-item back">
+               <a class="social-link link" href="">
+               <svg class="social-icon fill-icon" width="20" height="20">
+                 <use href="./images/symbol-defs.svg#icon-twiter"></use>
+               </svg>
+             </a>
+           </li>
+             <li class="social-item back">
+               <a class="social-link link" href="">
+               <svg class="social-icon fill-icon" width="20" height="20">
+                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
+               </svg>
+             </a>
+           </li>
+             <li class="social-item back">
+               <a class="social-link link" href="">
+               <svg class="social-icon fill-icon" width="20" height="20">
+                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+               </svg>
+             </a>
+           </li>
+           </ul>
+         </div>
         </div>
+            <div class="subscription">
+         <h2 class="sing">Підпишіться на розсилку</h2>
+         <form class="forms">
+           <input class="mail" type="email" name="mail" id="mail" placeholder="E-mail">
+           <button type="submit" class="button-mail">
+             Підписатися
+             <svg class="icon-send" width="24" height="24">
+               <use href="./images/telegram.svg#icon-icon-send"></use>
+             </svg>
+           </button>
+         </form>
+       </div>
     </footer>
     <div class="modal-backgrop is-hidden" data-modal>
        <div class="modal">
@@ -471,5 +513,6 @@
        </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src=" js/mobile-menu.js "></script>
   </body>
 </html>

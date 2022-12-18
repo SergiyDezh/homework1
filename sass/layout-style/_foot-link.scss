@@ -3,10 +3,19 @@
   width: 206px;
   height: 80px;
   margin-left: 70px;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    margin-left: 121px;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-left: 165px;
+  }
   
   .social-icons {
     padding-left: 0;
-  }
 }
   
   .socials {
@@ -16,12 +25,17 @@
     line-height: 16px;
     text-transform: uppercase;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      text-align: center;
+    }
   }
   
-  .post {
+  .post-foot {
+
     .social-icons {
     display: flex;
-    margin-top: 16px;
+    margin-top: 16px;}
     }
     
     .social-item {
@@ -64,8 +78,7 @@
      &:nth-child(4) {
      margin-right: 0;
      }
-   }
-}  
+   }  
   
 .back {
     border-radius: 50%;
@@ -74,4 +87,5 @@
     .fill-icon {
     fill: $site-nav-color;
     }
+}
 }
