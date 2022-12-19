@@ -17,10 +17,10 @@
     <title>Студія</title>
   </head>
   <body class="page">
-    <header class="link">
+    <header class="link" data-header>
       <div class="container lin">
         <nav class="lin">
-          <a href="./index.html" class="logo logo-hed"><span class="logo-style">Web</span>Studio</a>
+          <a href="./index.html" class="logo logo-hed" aria-label="Web Studio"><span class="logo-style">Web</span>Studio</a>
           <ul class="site-nav lin lin-link">
             <li class="studio"><a href="./index.html" class="title current">Студія</a></li>
             <li class="studio"><a href="./portfolio.html" class="title">Портфоліо</a></li>
@@ -36,7 +36,7 @@
                 info@devdtudio.com
               </a>
             </li>
-            <li class="number">
+            <li class="number mobil-num">
               <a class="grey envelope" href="tel:+380961111111">
                 <svg class="icon-mail" width="10" height="16">
                   <use href="./images/symbol-defs.svg#icon-Vector"></use>
@@ -44,6 +44,54 @@
                 +38 096 111 11 11</a>
             </li>
         </ul>
+        <button type="button" class="menu-button is-open"
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-menu-button
+        aria-label="перемикач мобільного меню">
+          <svg class="icon-hover" width="40" height="40">
+            <use class="icon-cross" href="./images/mobal-icon/skript-mobal.svg#icon-close40"></use>
+            <use class="icon-menu" href="./images/mobal-icon/skript-mobal.svg#icon-menu40"></use>
+          </svg>
+        </button>
+        <div class="menu-container is-open" id="menu-container" data-menu>
+           <div class="mob-container">
+            <ul class="momil-menu">
+              <li class="menu-nav"><a href="./index.html" class="navigation">Студія</a></li>
+              <li class="menu-nav"><a href="./portfolio.html" class="navigation">Портфоліо</a></li>
+              <li class="menu-nav"><a href="" class="navigation">Контакти</a></li>
+            </ul>
+           </div>
+             <div class="link-container">
+              <ul class="contacts">
+                <li class="click">
+                  <a class="nomer" href="tel:+380961111111">
+                    +38 096 111 11 11</a>
+                </li>
+                <li class="click">
+                  <a class="gmail" href="mailto:info@devdtudio.com">
+                    info@devdtudio.com
+                  </a>
+                </li>
+            </ul>
+             </div>
+             <div class="dodatok-container">
+              <ul class="mob-dodatok">
+                <li class="inet">
+                  <a class="dodatok" href="Instagram">Instagram</a>
+                </li>
+                <li class="inet">
+                  <a class="dodatok" href="Twitter">Twitter</a>
+                </li>
+                <li class="inet">
+                  <a class="dodatok" href="Facebook">Facebook</a>
+                </li>
+                <li class="inet">
+                  <a class="dodatok" href="Linkedin">Linkedin</a>
+                </li>
+              </ul>
+             </div>
+        </div>
       </div>
     </header>
     <main>
@@ -513,6 +561,8 @@
        </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script defer src=" js/mobile-menu.js "></script>
+    <script defer src="./js/mobilemenu.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/header-scroll.js"></script>
   </body>
 </html>
