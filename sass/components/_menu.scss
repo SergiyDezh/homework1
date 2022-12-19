@@ -6,7 +6,7 @@
   background-color: transparent;
   z-index: 100;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     margin-left: auto;
   }
 
@@ -49,7 +49,7 @@
   fill: $accent-color;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .menu-nav {
     list-style: none;
     padding-bottom: 35px;

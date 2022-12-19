@@ -1,10 +1,10 @@
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
      .content-box {
       margin-left: 124px;
       margin-right: auto;
       margin-bottom: 60px;
 
-      @media screen and (min-width: 481px) and (max-width: 768px) {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-right: 165px;
       }
   }
@@ -21,15 +21,15 @@
     align-items: center;
     align-items: baseline;
 
-    @media screen and (min-width: 320px) and (max-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
       flex-wrap: wrap;
     }
 
-    @media screen and (min-width: 481px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       flex-wrap: wrap;
     }
 
-    @media screen and (min-width: 769px) and (max-width: 1200px) {
+    @media screen and (min-width: 1200px) {
       display: flex;
       justify-content: center;
     }
@@ -87,7 +87,7 @@
   .foot-botton {
     margin-bottom: 9px;
 
-    @media screen and (min-width: 320px) and (max-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
     text-align: center;
     }
   }
@@ -99,14 +99,14 @@
 
   .logo-foot {
 
-    @media screen and (min-width: 320px) and (max-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
        text-align: center;
     }
   }
 
     .social-box {
 
-      @media screen and (min-width: 481px) and (max-width: 768px) {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 100%;
         display: flex;
         flex-wrap: nowrap;

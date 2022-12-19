@@ -1,7 +1,7 @@
 .subscription {
     margin-left: auto;
 
-    @media screen and (min-width: 481px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-left: auto;
       margin-right: auto;
     }
@@ -10,13 +10,13 @@
   .forms {
     display: flex;
 
-    @media screen and (min-width: 320px) and (max-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
       flex-wrap: wrap;
       margin-right: auto;
       margin-left: auto;
     }
 
-    @media screen and (min-width: 481px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       flex-wrap: wrap;
       margin-right: auto;
       margin-left: auto;
@@ -32,12 +32,12 @@
     color: $site-nav-color;
     margin-bottom: 20px;
 
-    @media screen and (min-width: 320px) and (max-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
       margin-top: 60px;
       text-align: center;
     }
 
-    @media screen and (min-width: 481px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       text-align: center;
       margin-top: 60px;
     }
@@ -53,14 +53,14 @@
     background-color: $background-color-footer;
     color: $site-nav-color;
 
-    @media screen and (min-width: 320px) and (max-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
      margin-right: auto;
      margin-left: auto;
       max-width: 358px;
       width: 100%;
     }
 
-    @media screen and (min-width: 481px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       max-width: 358px;
       width: 100%;
     }
@@ -85,12 +85,12 @@
     margin-left: 12px;
     border: none;
 
-    @media screen and (min-width: 320px) and (max-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
       margin-top: 20px;
       margin-left: 140px;
     }
 
-    @media screen and (min-width: 481px) and (max-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-top: 20px;
       margin-left: auto;
       margin-right: auto;

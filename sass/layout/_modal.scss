@@ -11,8 +11,8 @@
   border-radius: 4px;
   padding: 40px;
 
-  @media screen and (min-width:320px) and (max-width:480px) {
-    width: 100%;
+  @media screen and (min-width:320px) and (max-width:767px) {
+    width: 450px;
   }
   
   .close-sing {
