@@ -105,7 +105,7 @@ ul {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .hero-title {
-    width: 360px;
+    width: 320px;
     font-weight: 900;
     font-size: 26px;
     line-height: 1.61;
@@ -191,8 +191,7 @@ ul {
   display: none;
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  width: 480px;
   height: 796px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -202,6 +201,16 @@ ul {
 }
 .menu-container.is-open {
   display: block;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .menu-container.is-open {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-container.is-open {
+    display: none;
+  }
 }
 
 .icon-hover:hover {
@@ -931,7 +940,6 @@ img {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .content-box {
-    margin-left: 124px;
     margin-right: auto;
     margin-bottom: 60px;
   }
@@ -946,7 +954,6 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 .conter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -962,6 +969,9 @@ img {
   .conter {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1098,7 +1108,6 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-right: auto;
-    margin-left: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1147,7 +1156,7 @@ img {
   .mail {
     margin-right: auto;
     margin-left: auto;
-    max-width: 358px;
+    max-width: 290px;
     width: 100%;
   }
 }
@@ -1187,7 +1196,7 @@ img {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .button-mail {
     margin-top: 20px;
-    margin-left: 140px;
+    margin-left: 130px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1568,7 +1577,7 @@ form > .agree {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .social {
-    margin-left: 121px;
+    margin-left: auto;
     margin-right: auto;
     text-align: center;
   }

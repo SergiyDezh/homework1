@@ -1,6 +1,5 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
      .content-box {
-      margin-left: 124px;
       margin-right: auto;
       margin-bottom: 60px;
 
@@ -14,6 +13,10 @@
     background-color: $background-color;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      // margin-left: auto;
+    }
   }
 
   .conter {
@@ -23,6 +26,7 @@
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
       flex-wrap: wrap;
+      justify-content: center;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
