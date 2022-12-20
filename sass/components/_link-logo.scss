@@ -40,6 +40,10 @@
     width: 145px;
     height: 31px;
     margin-right: 93px;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      margin-right: 0;
+    }
   }
   
   .logo-style {

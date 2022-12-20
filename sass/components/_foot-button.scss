@@ -1,102 +1,105 @@
 .subscription {
+  margin-left: auto;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: auto;
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      margin-left: auto;
-      margin-right: auto;
-    }
+    margin-right: auto;
+    margin-top: 60px;
   }
-  
-  .forms {
-    display: flex;
 
-    @media screen and (min-width: 320px) and (max-width: 767px) {
-      flex-wrap: wrap;
-      margin-right: auto;
-      // margin-left: auto;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      flex-wrap: wrap;
-      margin-right: auto;
-      margin-left: auto;
-    }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    text-align: center;
+    margin-top: 60px;
   }
-  
-  .sing {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $site-nav-color;
-    margin-bottom: 20px;
+}
 
-    @media screen and (min-width: 320px) and (max-width: 767px) {
-      margin-top: 60px;
-      text-align: center;
-    }
+.forms {
+  display: flex;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      text-align: center;
-      margin-top: 60px;
-    }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    flex-wrap: wrap;
+    margin-right: auto;
+    // margin-left: auto;
   }
-  
-  .mail {
-    width: 358px;
-    height: 50px;
-    padding-left: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background-color: $background-color-footer;
-    color: $site-nav-color;
 
-    @media screen and (min-width: 320px) and (max-width: 767px) {
-     margin-right: auto;
-     margin-left: auto;
-      max-width: 290px;
-      width: 100%;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      max-width: 358px;
-      width: 100%;
-    }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
   }
-  
-  .button-mail {
-    display: flex;
-    width: 200px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 0.06em;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    padding: 10px 28px;
-    cursor: pointer;
-    background: $accent-color;
-    color: $site-nav-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    margin-left: 12px;
-    border: none;
+}
 
-    @media screen and (min-width: 320px) and (max-width: 767px) {
-      margin-top: 20px;
-      margin-left: 130px;
-    }
+.sing {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $site-nav-color;
+  margin-bottom: 20px;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      margin-top: 20px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    text-align: center;
   }
-  
-  .icon-send {
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+.mail {
+  width: 358px;
+  height: 50px;
+  padding-left: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: $background-color-footer;
+  color: $site-nav-color;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
+.button-mail {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  padding: 10px 28px;
+  cursor: pointer;
+  background: $accent-color;
+  color: $site-nav-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 12px;
+  border: none;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-top: 20px;
+    margin-left: 130px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.icon-send {
   margin-left: 10px;
-  }
+}

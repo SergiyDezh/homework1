@@ -11,23 +11,23 @@
   border-radius: 4px;
   padding: 40px;
 
-  @media screen and (min-width:320px) and (max-width:767px) {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
     width: 450px;
   }
-  
+
   .close-sing {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  background-color: $site-nav-color;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: $site-nav-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
   }
 }
 
@@ -41,12 +41,12 @@
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+
   .is-hidden .modal {
-  transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
 }
-}
-  
+
 .close {
   width: 100%;
   height: 100%;
@@ -56,187 +56,218 @@
   justify-content: center;
   color: $logo-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+
   &:hover {
-  fill: $accent-color;
+    fill: $accent-color;
   }
 }
-  
-  .is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-  }
 
-  .description {
-    margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $primary-text-color;
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.description {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+
+.name,
+.phone,
+.form-email,
+.comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $title-text-color;
+  margin-bottom: 4px;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  outline: 0;
+  font: inherit;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  padding: 11px 30px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nameitemform {
+  position: absolute;
+  fill: $primary-text-color;
+  transform: translateX (-60%);
+  bottom: 17%;
+  right: 94%;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    right: 91%;
   }
-  
-  .name, .phone, .form-email, .comment {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+}
+
+.name,
+.phone,
+.form-email {
+  position: relative;
+}
+
+.phone,
+.form-email,
+.comment {
+  margin-top: 10px;
+}
+
+.comment {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
   }
-  
-  .form-label {
+}
+
+.form-input-agree {
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.form-input {
+  &:hover + .nameitemform,
+  &:focus + .nameitemform {
+    fill: $accent-color;
+  }
+}
+
+.form-input-agree {
+  padding: 12px 16px;
+  width: 100%;
+  height: 120px;
+  margin: 0;
+  border-radius: 4px;
+  outline: 0;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+form > .agreetext {
+  margin-bottom: 30px;
+}
+
+.agree-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  margin-right: 9px;
+  border: 2px solid $primary-text-color;
+  border-radius: 4px;
+}
+
+.icon-modal-form {
+  fill: transparent;
+  fill: $site-nav-color;
+}
+
+.agreetext .agreelink {
+  color: $accent-color;
+  text-decoration: underline;
+
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    font-family: "Roboto";
+    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: $title-text-color;
-    margin-bottom: 4px;
+    letter-spacing: 0.03em;
   }
-  
-  .form-input {
-    width: 100%;
-    height: 40px;
-    margin: 0;
-    outline: 0;
-    font: inherit;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    padding: 11px 30px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  
-  .nameitemform {
-    position: absolute;
-    fill: $primary-text-color;
-    transform: translateX (-60%);
-    bottom: 17%;
-    right: 94%;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .name, .phone, .form-email {
-    position: relative;
-  }
-  
-  .phone, .form-email, .comment {
-    margin-top: 10px;
-  }
-  
-  .comment {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  .form-input {
-    &:hover, &:focus {
-         border-color: $accent-color;
-    }
-}    
+}
 
-.form-input-agree {
-    &:hover, &:focus {
-        border-color: $accent-color;
-    }
+.agreetext p {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
 }
- 
-.form-input {
-    &:hover + .nameitemform,
-    &:focus + .nameitemform {
-        fill: $accent-color;
-    }
+
+.checkbox {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
-  
-  .form-input-agree {
-    padding: 12px 16px;
-    width: 100%;
-    height: 120px;
-    margin: 0;
-    border-radius: 4px;
-    outline: 0;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    resize: none;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  form > .agreetext {
-    margin-bottom: 30px;
-  }
-  
-  .agree-label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .checkitem {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 16px;
-    height: 15px;
-    margin-right: 9px;
-    border: 2px solid $primary-text-color;
-    border-radius: 4px;
-  }
-  
-  .icon-modal-form {
-    fill: transparent;
-    fill: $site-nav-color;
-    }
-  
-  .agreetext .agreelink {
-    color: $accent-color;
-    text-decoration: underline;
-  }
-  
-  .checkbox {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-  }
-  
-  
-  .checkbox {
-    &:checked + .checkitem {
+
+.checkbox {
+  &:checked + .checkitem {
     background-color: $accent-color;
     border: none;
   }
-}  
-  
+}
+
 .agreetext .input {
-      &:checked + .agree-label .icon-modal-form {
+  &:checked + .agree-label .icon-modal-form {
     fill: $site-nav-color;
   }
 }
-  
+
 form > .agree {
-    display: block;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.88em;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    border-radius: 4px;
-    border: none;
-    margin: 0 auto;
-    color: $site-nav-color;
-    background-color: $accent-color;
-    padding: 10px 52px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88em;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  margin: 0 auto;
+  color: $site-nav-color;
+  background-color: $accent-color;
+  padding: 10px 52px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .agree {
-    &:hover {
+  &:hover {
     background-color: #2182d1;
-    }
+  }
 }
