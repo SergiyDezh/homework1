@@ -5,11 +5,27 @@
   
   .link {
     border-bottom: 1px solid #ececec;
+    
+    // @media screen and (min-width: 320px) and (max-width: 767px) {
+    //   position: relative;
+    // }
   }
   
   .lin {
     display: flex;
     align-items: center;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      height: 60px;
+    }
+  }
+
+  .lin-rel {
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
   
   .logo {
@@ -24,6 +40,10 @@
     width: 145px;
     height: 31px;
     margin-right: 93px;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      margin-right: 0;
+    }
   }
   
   .logo-style {
@@ -40,6 +60,10 @@
   
   .number {
     margin-right: 30px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+     margin: 0;
+    }
   }
   
   .icon-mail {
@@ -63,6 +87,10 @@
   
   .number:nth-child(2) {
     margin-right: 0;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-right: auto;
+    }
   }
   
   .site-nav .title {
@@ -104,7 +132,11 @@
     list-style: none;
     padding: 0;
     margin-left: auto;
-    
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      display: none;
+    }
+
     .grey {
     color: $title-text-color;
     font-weight: 500;
@@ -114,6 +146,15 @@
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: inline-block;
+      padding: 0;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.02em;
+    }
    }
 }
 
@@ -122,4 +163,4 @@
          color: $accent-color;
       }
 }
-  
+
